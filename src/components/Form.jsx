@@ -34,6 +34,8 @@ export default function Form() {
 
     if (fName && lName) { 
       setMessage("success")
+      setFName(fName)
+      setLName(lName)
       console.log({
         fName, // fName : fName 
         lName,
@@ -76,7 +78,7 @@ export default function Form() {
             <div className="my-4">
               <label htmlFor="name">Nom</label>
               <input
-                //   onChange={(e) => this.setState({lName: e.target.value })}
+                //   onChange={(e) => setLName(e.target.value)}
                 //   value={lName}
                 className="p-5 w-full bg-gray-900"
                 type="text"
@@ -87,7 +89,7 @@ export default function Form() {
             <div className="my-4">
               <label htmlFor="firstname">Prénom</label>
               <input
-                //   onChange={(e) => this.setState({fName: e.target.value })}
+                //   onChange={(e) => setFName(e.target.value)}
                 //    value={fName}
                 className="p-5 w-full bg-gray-900"
                 type="text"
@@ -99,7 +101,7 @@ export default function Form() {
             <div className="my-4">
               <label htmlFor="email">Email</label>
               <input
-                //   onChange={(e) => this.setState({email: e.target.value })}
+                //   onChange={(e) => setEmail(e.target.value)}
                 //   value={email}
                 className="p-5 w-full bg-gray-900"
                 type="email"

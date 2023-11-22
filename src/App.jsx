@@ -10,11 +10,13 @@ import ListRendering from "./components/ListRendering";
 import CustomBtn from "./components/CustomBtn";
 import { Camera } from 'react-feather';
 import Form from "./components/Form";
+import GameList from "./components/exercice/GameList";
 
 
 // Fonction pure qui prend en argument des props et qui retourne un UI
 export default function App() {
   console.log("render");
+
   // Hooks => function qui a pour convention "useFunctionalité"
   // useState : va encapsuler un état unique
   const [firstName, setFirstName] = useState("Eikichi"); // [value, setValue]
@@ -143,6 +145,8 @@ export default function App() {
 
           <SubTitle title={"Formulaire"} />
           <Form />
+
+          <GameList />
 
           
 
