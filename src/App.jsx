@@ -11,6 +11,7 @@ import CustomBtn from "./components/CustomBtn";
 import { Camera } from 'react-feather';
 import Form from "./components/Form";
 import GameList from "./components/exercice/GameList";
+import Clock from "./components/Clock";
 
 
 // Fonction pure qui prend en argument des props et qui retourne un UI
@@ -145,6 +146,10 @@ export default function App() {
 
           <SubTitle title={"Formulaire"} />
           <Form />
+
+          <SubTitle title={"useEffect"} />
+          <Clock />
+
 
           <GameList />
 
